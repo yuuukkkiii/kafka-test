@@ -1,0 +1,15 @@
+*/.settings/*
+.settings
+*/target/*
+target
+*/logs/*
+*.log*
+*.classpath
+*.project
+.springBeans
+.factorypath
+*.iml*
+*/*.iml
+.iml
+/.idea/*
+*/.idea/*
