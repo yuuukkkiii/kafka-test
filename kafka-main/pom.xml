@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.zh.test</groupId>
+        <artifactId>kafka-test</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <packaging>pom</packaging>
+    <artifactId>kafka-main</artifactId>
+
+    <properties>
+        <java.version>8</java.version>
+
+    </properties>
+
+    <modules>
+        <module>kafka-main-common</module>
+        <module>kafka-main-repository</module>
+        <module>kafka-main-service</module>
+        <module>kafka-main-web</module>
+    </modules>
+
+</project>
