@@ -1,0 +1,24 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /kafka/test
+
+spring:
+
+  # mysql 8 com.mysql.cj.jdbc.Driver ???????????serverTimezone=UTC
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mes?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+
+  kafka:
+    bootstrap-servers: 8.142.110.33:9092
+    listener:
+      # ??????topic??????????????false
+      missing-topics-fatal: false
+    consumer:
+      enable-auto-commit: true
+      auto-commit-interval: 1000
+  application:
+    name: kafka-test
